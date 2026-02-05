@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.login-page {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: #f2f2f2;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.login-page > div {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.login-image-container {
+  flex: 1;
+}
+
+.login-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-card {
+  flex: 1;
+  background: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.login-header img{
+  width: 300px;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 520px;
+}
+
+.input-fields input {
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.login-button {
+  width: 520px;
+  padding: 14px;
+  background: #d72638;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-button:hover{
+  background: #80131d;
+}
+
+.login-card span{
+  color: #d72638;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
