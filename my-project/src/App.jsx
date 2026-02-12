@@ -2,14 +2,18 @@ import { useState } from 'react'
 import Dashboard from './components/Dashboard'
 import AboutUs from './components/AboutUs'
 import BrowsePage from './components/BrowsePage'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <BrowsePage></BrowsePage>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/AboutUs" element={<AboutUs />} />
+        <Route path="/BrowsePage" element={<BrowsePage />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

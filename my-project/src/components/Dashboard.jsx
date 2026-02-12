@@ -1,6 +1,12 @@
 import Navbar from "./Navbar"
+import { useNavigate } from "react-router-dom";
 
 function Dashboard(){
+
+    const navigate = useNavigate();
+    function navigateToBrowsePage(){
+        navigate('/BrowsePage');
+    }
     return(
         <div>
             <Navbar/>
@@ -25,7 +31,7 @@ function Dashboard(){
                 <h2 className="font-light text-4xl">Book your visit and check parts availability before coming in.</h2>
                 <div className="flex gap-6">
                     <button className="bg-red-700  hover:bg-red-800 text-white font-medium rounded-2xl w-60 h-10">Book an Appointment</button>
-                    <button className="bg-red-700  hover:bg-red-800 text-white font-medium rounded-2xl w-60 h-10">Browse Parts</button>
+                    <button className="bg-red-700  hover:bg-red-800 text-white font-medium rounded-2xl w-60 h-10" onClick={navigateToBrowsePage}>Browse Parts</button>
                 </div>
             </div>
         </div>
