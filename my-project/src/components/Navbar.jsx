@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate} from 'react-router-dom';
 
 function Navbar(){
     const navLinkStyles = ({ isActive }) => ({
@@ -6,7 +6,12 @@ function Navbar(){
         textDecoration: isActive ? 'underline' : 'none',
         fontWeight: isActive ? 'bold' : 'normal'
     });
-    
+
+    const navigate = useNavigate();
+    function navigateToLogoutModal(){
+        navigate('/LogoutModal');
+    }
+
     return(
         <div className="flex items-center justify-between px-8 py-4 bg-white shadow">
             <div className="flex items-center gap-8">
@@ -26,7 +31,7 @@ function Navbar(){
                 <NavLink>Settings</NavLink>
             </div>
             <div>
-                <button className="bg-red-700 text-white font-medium rounded-2xl p-2 hover:bg-red-800 w-30 h-15">LOG OUT</button>
+                <button className="bg-red-700 text-white font-medium rounded-2xl p-2 hover:bg-red-800 w-30 h-15" onClick={navigateToLogoutModal}>LOG OUT</button>
             </div>
         </div>
     );
