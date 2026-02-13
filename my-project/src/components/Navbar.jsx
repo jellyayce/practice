@@ -27,11 +27,28 @@ function Navbar(){
             <div className="flex gap-28 text-gray-700 font-medium text-xl">
                 <NavLink to="/" style={navLinkStyles}>Home</NavLink>
                 <NavLink to="/AboutUs" style={navLinkStyles}>About Us</NavLink>
-                <NavLink>Profile</NavLink>
+                <NavLink to="/Profile" style={navLinkStyles}>Profile</NavLink>
                 <NavLink>Settings</NavLink>
             </div>
             <div>
-                <button className="bg-red-700 text-white font-medium rounded-2xl p-2 hover:bg-red-800 w-30 h-15" onClick={navigateToLogoutModal}>LOG OUT</button>
+                <button className="btn bg-red-700 text-white font-medium rounded-2xl p-2 hover:bg-red-800 w-30 h-15" onClick={()=>document.getElementById('my_modal_1').showModal()}>LOG OUT</button>
+                <dialog id="my_modal_1" className="modal">
+                    <div className='flex items-center justify-center h-screen'>
+                        <div className='flex flex-col items-center gap-12 bg-gray-100 rounded-lg p-16'>
+                            <img src="gearuplogo.png" alt="" className='w-60 h-40'/>
+                            <div className='flex flex-col items-center'>
+                                <p className='text-2xl font-extrabold'>Are you sure you want to log out?</p>
+                                <p className='text-l font-medium'>You will be signed out of your account.</p>
+                            </div>
+                            <div className="modal-action">
+                                <form method="dialog" className='flex justify-center gap-4'>
+                                    <button className="btn bg-gray-700 text-white w-25 h-10 rounded-2xl">Close</button>
+                                    <button className='bg-red-700 hover:bg-red-800 text-white w-25 h-10 rounded-2xl'>Confirm</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </dialog>
             </div>
         </div>
     );
