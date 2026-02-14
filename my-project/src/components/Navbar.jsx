@@ -28,7 +28,7 @@ function Navbar(){
                 <NavLink to="/" style={navLinkStyles}>Home</NavLink>
                 <NavLink to="/AboutUs" style={navLinkStyles}>About Us</NavLink>
                 <NavLink to="/Profile" style={navLinkStyles}>Profile</NavLink>
-                <NavLink>Settings</NavLink>
+                <NavLink to="/Settings" style={navLinkStyles}>Settings</NavLink>
             </div>
             <div>
                 <button className="btn bg-red-700 text-white font-medium rounded-2xl p-2 hover:bg-red-800 w-30 h-15" onClick={()=>document.getElementById('my_modal_1').showModal()}>LOG OUT</button>
