@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Dashboard from './components/Dashboard'
 import AboutUs from './components/AboutUs'
 import BrowsePage from './components/BrowsePage'
+import AppointmentPage from './components/AppointmentPage'
 import LogoutModal from './components/LogoutModal'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Profile from './components/Profile'
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Dashboard />} />
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/BrowsePage" element={<BrowsePage />} />
+        <Route path="/AppointmentPage" element={<AppointmentPage />} />
         <Route path="/Profile" element={<Profile />} />
         <Route path="/Settings" element={<Settings />} />
         <Route path="/LogoutModal" element={<LogoutModal />} />
