@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import "cally";
 import Navbar from './Navbar'
+import Button from "./Button";
 
 export default function AppointmentPage() {
     const [othersChecked, setOthersChecked] = useState(false);
@@ -28,6 +29,8 @@ export default function AppointmentPage() {
     function handleClearButton(){
         setDate("Pick a date");
     }
+
+    const buttons = ["9:00am","10:00am","11:00am","1:00pm","2:00pm","3:00pm","4:00pm","5:00pm","6:00pm","7:00pm","8:00pm","9:00pm"]
 
   return (
     <div>
@@ -109,10 +112,10 @@ export default function AppointmentPage() {
                 </div>
             </fieldset>
         </div>
-        <div className='flex px-4'>
+        <div className='flex px-4 pb-4'>
             <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-screen border p-4 flex flex-row">
                 <legend className="fieldset-legend text-3xl font-extrabold">Choose Appointment Date & Time</legend>
-                <div className="flex flex-col gap-4 w-2/5 bg-amber-100">
+                <div className="flex flex-col gap-4 w-2/5">
                     <div>
                         <label className="label text-black">Select a Date</label>
                         <div className="flex flex-row gap-2 items-center">
@@ -134,9 +137,17 @@ export default function AppointmentPage() {
                             <li><a>John Doink</a></li>
                         </ul>
                     </details>
+                    <div className="flex gap-4">
+                        <button className="btn w-40 h-15 shadow-lg shadow-gray-400/50 bg-green-500 text-lg ">Available</button>
+                        <button className="btn w-40 h-15 shadow-lg shadow-gray-400/50 bg-red-600 text-lg">Booked</button>
+                    </div>
                 </div>
-                <div className="flex w-3/5 bg-amber-300">
-                    
+                <div className="flex w-3/5 items-center justify-center">
+                    <div className="grid grid-flow-col grid-rows-3 gap-4">
+                        {buttons.map((button) => (
+                            <Button label={button}></Button>
+                        ))}
+                    </div>
                 </div>
             </fieldset>
         </div>
