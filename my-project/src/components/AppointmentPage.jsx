@@ -31,6 +31,7 @@ export default function AppointmentPage() {
     }
 
     const buttons = ["9:00am","10:00am","11:00am","1:00pm","2:00pm","3:00pm","4:00pm","5:00pm","6:00pm","7:00pm","8:00pm","9:00pm"]
+    const [selectedIndex, setSelectedIndex] = useState(null);
 
   return (
     <div>
@@ -144,8 +145,8 @@ export default function AppointmentPage() {
                 </div>
                 <div className="flex w-3/5 items-center justify-center">
                     <div className="grid grid-flow-col grid-rows-3 gap-4">
-                        {buttons.map((button) => (
-                            <Button label={button}></Button>
+                        {buttons.map((button, index) => (
+                            <Button label={button} key={index} onClick={() => setSelectedIndex(index)} isSelected={selectedIndex === index}></Button>
                         ))}
                     </div>
                 </div>
