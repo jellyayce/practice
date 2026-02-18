@@ -8,8 +8,8 @@ function Navbar(){
     });
 
     const navigate = useNavigate();
-    function navigateToLogoutModal(){
-        navigate('/LogoutModal');
+    function navigateToLogin(){
+        navigate('/');
     }
 
     return(
@@ -25,7 +25,7 @@ function Navbar(){
                 </div>
             </div>
             <div className="flex gap-28 text-gray-700 font-medium text-xl">
-                <NavLink to="/" style={navLinkStyles}>Home</NavLink>
+                <NavLink to="/Dashboard" style={navLinkStyles}>Home</NavLink>
                 <NavLink to="/AboutUs" style={navLinkStyles}>About Us</NavLink>
                 <NavLink to="/Profile" style={navLinkStyles}>Profile</NavLink>
                 <NavLink to="/Settings" style={navLinkStyles}>Settings</NavLink>
@@ -43,7 +43,7 @@ function Navbar(){
                             <div className="modal-action">
                                 <form method="dialog" className='flex justify-center gap-4'>
                                     <button className="btn bg-gray-700 text-white w-25 h-10 rounded-2xl">Close</button>
-                                    <button className='bg-red-700 hover:bg-red-800 text-white w-25 h-10 rounded-2xl'>Confirm</button>
+                                    <button className='bg-red-700 hover:bg-red-800 text-white w-25 h-10 rounded-2xl' onClick={navigateToLogin}>Confirm</button>
                                 </form>
                             </div>
                         </div>
