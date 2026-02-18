@@ -4,6 +4,7 @@ import AboutUs from './components/AboutUs'
 import BrowsePage from './components/BrowsePage'
 import AppointmentPage from './components/AppointmentPage'
 import LogoutModal from './components/LogoutModal'
+import Login from './components/Login'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Profile from './components/Profile'
 import Settings from './components/Settings'
@@ -13,7 +14,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Dashboard />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/BrowsePage" element={<BrowsePage />} />
         <Route path="/AppointmentPage" element={<AppointmentPage />} />
