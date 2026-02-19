@@ -1,13 +1,13 @@
 import { useState } from 'react'
-import Dashboard from './components/Dashboard'
-import AboutUs from './components/AboutUs'
-import BrowsePage from './components/BrowsePage'
-import AppointmentPage from './components/AppointmentPage'
+import Dashboard from './pages/Dashboard'
+import AboutUs from './pages/AboutUs'
+import BrowsePage from './pages/BrowsePage'
+import AppointmentPage from './pages/AppointmentPage'
 import LogoutModal from './components/LogoutModal'
-import Login from './components/Login'
+import Login from './pages/Login'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Profile from './components/Profile'
-import Settings from './components/Settings'
+import Profile from './pages/Profile'
+import Settings from './pages/Settings'
 
 function App() {
 

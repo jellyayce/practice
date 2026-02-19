@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import "cally";
-import Navbar from './Navbar'
-import Button from "./Button";
+import Navbar from '../components/Navbar'
+import Button from "../components/Button";
 
 export default function AppointmentPage() {
     const [othersChecked, setOthersChecked] = useState(false);

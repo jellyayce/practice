@@ -1,4 +1,4 @@
-import Navbar from "./Navbar"
+import Navbar from "../components/Navbar"
 import { useNavigate } from "react-router-dom";
 
 function Dashboard(){

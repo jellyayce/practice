@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './Navbar'
+import Navbar from '../components/Navbar'
 import { MdEdit } from "react-icons/md";
 import { FaCamera } from "react-icons/fa";
 

@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import Navbar from './Navbar'
-import ProfileMenu from './ProfileMenu';
-import NotificationsMenu from './NotificationsMenu';
-import AccessibilityMenu from './AccessibilityMenu';
-import ThemeMenu from './ThemeMenu';
+import Navbar from '../components/Navbar'
+import ProfileMenu from '../components/ProfileMenu';
+import NotificationsMenu from '../components/NotificationsMenu';
+import AccessibilityMenu from '../components/AccessibilityMenu';
+import ThemeMenu from '../components/ThemeMenu';
 import { IoPersonCircle } from "react-icons/io5";
 import { IoNotificationsCircle } from "react-icons/io5";
 import { IoAccessibility } from "react-icons/io5";

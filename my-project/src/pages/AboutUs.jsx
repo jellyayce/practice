@@ -1,12 +1,12 @@
 import React from 'react'
-import Navbar from './Navbar'
+import Navbar from '../components/Navbar'
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 
 export default function AboutUs() {
   return (
-    <div className=''>
+    <div>
         <Navbar></Navbar>
         <div className="bg-[url('/pic2.png')] bg-cover bg-center w-full h-96 flex justify-center items-center">
             <div className='flex flex-col items-center px-60 text-white gap-8'>
