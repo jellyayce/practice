@@ -8,6 +8,7 @@ import Login from './pages/Login'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Profile from './pages/Profile'
 import Settings from './pages/Settings'
+import Signup from './pages/Signup'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login />} />
+        <Route path="/Signup" element={<Signup />} />
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/BrowsePage" element={<BrowsePage />} />
