@@ -42,8 +42,8 @@ function Navbar(){
                             </div>
                             <div className="modal-action">
                                 <form method="dialog" className='flex justify-center gap-4'>
-                                    <button className="btn bg-gray-700 text-white w-25 h-10 rounded-2xl">Close</button>
-                                    <button className='bg-red-700 hover:bg-red-800 text-white w-25 h-10 rounded-2xl' onClick={navigateToLogin}>Confirm</button>
+                                    <button className="btn bg-gray-700 text-white w-25 h-10 rounded-2xl cursor-pointer">Close</button>
+                                    <button className='bg-red-700 hover:bg-red-800 text-white w-25 h-10 rounded-2xl cursor-pointer' onClick={navigateToLogin}>Confirm</button>
                                 </form>
                             </div>
                         </div>
