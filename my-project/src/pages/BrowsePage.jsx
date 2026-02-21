@@ -58,9 +58,10 @@ export default function BrowsePage() {
 
 
   return (
-    <PageWrapper>
+    
         <div>
             <Navbar></Navbar>
+            <PageWrapper>
             <div className='flex flex-row gap-2 p-2 justify-center'>
                 <div className='flex flex-col gap-2'>
                     <div className="relative w-125 h-60">
@@ -115,7 +116,8 @@ export default function BrowsePage() {
                     ))}
                 </div>
             </div>
+            </PageWrapper>
         </div>
-    </PageWrapper>
+    
   )
 }

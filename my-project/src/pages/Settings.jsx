@@ -13,9 +13,10 @@ import { RiPaintBrushFill } from "react-icons/ri";
 export default function Settings() {
     const [activeMenu, setActiveMenu] = useState("Profile");
   return (
-    <PageWrapper>
+    
         <div>
             <Navbar></Navbar>
+            <PageWrapper>
             <div className='flex flex-row p-8'>
                 <div className="flex items-center menu bg-base-200 rounded-box w-1/4 px-4 gap-2">
                     <h1 className='text-5xl font-semibold p-16'>SETTINGS</h1>
@@ -41,7 +42,8 @@ export default function Settings() {
                     {activeMenu === "Theme" && <ThemeMenu />}
                 </div>
             </div>
+            </PageWrapper>
         </div>
-    </PageWrapper>
+    
   )
 }

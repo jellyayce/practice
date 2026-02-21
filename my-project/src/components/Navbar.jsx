@@ -24,7 +24,7 @@ function Navbar(){
                     <span>REPEAT</span>
                 </div>
             </div>
-            <div className="flex gap-28 text-gray-700 font-medium text-xl">
+            <div className="flex gap-25 text-gray-700 font-medium text-xl">
                 <NavLink to="/Dashboard" style={navLinkStyles}>Home</NavLink>
                 <NavLink to="/AboutUs" style={navLinkStyles}>About Us</NavLink>
                 <NavLink to="/Profile" style={navLinkStyles}>Profile</NavLink>

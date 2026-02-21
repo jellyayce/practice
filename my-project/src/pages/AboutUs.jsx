@@ -7,9 +7,9 @@ import { FaLocationDot } from "react-icons/fa6";
 
 export default function AboutUs() {
   return (
-    <PageWrapper>
         <div>
             <Navbar></Navbar>
+            <PageWrapper>
             <div className="bg-[url('/pic2.png')] bg-cover bg-center w-full h-96 flex justify-center items-center">
                 <div className='flex flex-col items-center px-60 text-white gap-8'>
                     <h2 className='font-extrabold text-7xl'>About Us</h2>
@@ -44,7 +44,7 @@ export default function AboutUs() {
                     <p>Location: Lapu-Lapu City</p>
                 </div>
             </div>
+            </PageWrapper>
         </div>
-    </PageWrapper>
   )
 }

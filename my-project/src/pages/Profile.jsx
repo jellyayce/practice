@@ -6,9 +6,10 @@ import { FaCamera } from "react-icons/fa";
 
 export default function Profile() {
   return (
-    <PageWrapper>
+    
         <div>
             <Navbar></Navbar>
+            <PageWrapper>
             <div className="w-full bg-white">
                 <div className="h-40 bg-neutral-700 relative">
                     <button className="absolute right-4 bottom-4 btn btn-circle btn-sm">
@@ -71,7 +72,8 @@ export default function Profile() {
                     </fieldset>
                 </div>
             </div>
+            </PageWrapper>
         </div>
-    </PageWrapper>
+    
   )
 }
