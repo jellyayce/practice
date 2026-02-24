@@ -13,7 +13,7 @@ function Navbar(){
     }
 
     return(
-        <div className="flex items-center justify-between px-8 py-4 bg-white shadow">
+        <div className="sticky top-0 z-50 flex items-center justify-between px-8 py-4 w-full bg-white shadow">
             <div className="flex items-center gap-8">
                 <img src="gearuplogo.png" alt="website logo" className="w-35 h-20"/>
                 <div className="flex flex-col text-red-700 font-extrabold text-4xl">
