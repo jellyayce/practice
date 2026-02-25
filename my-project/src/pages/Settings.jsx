@@ -17,7 +17,7 @@ export default function Settings() {
         <div>
             <Navbar></Navbar>
             <PageWrapper>
-            <div className='flex flex-row p-8'>
+            <div className='flex flex-row p-8 gap-8'>
                 <div className="flex items-center menu bg-base-200 rounded-box w-1/4 px-4 gap-2">
                     <h1 className='text-5xl font-semibold p-16'>SETTINGS</h1>
                     <div className='flex flex-col gap-20'>
@@ -35,7 +35,7 @@ export default function Settings() {
                         </li>
                     </div>
                 </div>
-                <div className="w-3/4 p-4">
+                <div className="w-3/4 rounded-box flex items-center">
                     {activeMenu === "Profile" && <ProfileMenu />}   
                     {activeMenu === "Notifications" && <NotificationsMenu />}
                     {activeMenu === "Accessibility" && <AccessibilityMenu />}
