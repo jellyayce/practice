@@ -37,7 +37,7 @@ export default function NotificationsMenu() {
               className="group flex flex-row items-center justify-between p-4 rounded-2xl border border-transparent hover:border-base-300 hover:bg-base-200 transition-all cursor-pointer"
             >
               <div className="flex flex-col">
-                <span className="font-bold text-lg group-hover:text-primary transition-colors">
+                <span className="font-bold text-lg group-hover:text-red-800 transition-colors">
                   {item.title}
                 </span>
                 <span className="text-sm text-base-content/50 font-normal">
@@ -47,7 +47,7 @@ export default function NotificationsMenu() {
               <input
                 type="checkbox"
                 defaultChecked
-                className="toggle toggle-primary toggle-lg"
+                className="toggle toggle-lg"
               />
             </label>
           ))}
